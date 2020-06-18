@@ -1,0 +1,9 @@
+[packages]
+pyjwt = "*"
+requests = "*"
+
+[dev-packages]
+oneidentity-safeguard-sessions-plugin-sdk = "~=1.3.0"
+
+[requires]
+python_version = "3.6"
