@@ -51,13 +51,12 @@ class Plugin(AAPlugin):
             self.logger.info("No devices to select from, rejecting connection")
             return AAResponse.deny(reason="No devices to select from")
 
-        position = 0
         message = ""
         self._device_index_map = {}
-        for device in devices:
-            position += 1
+        for position, device in enumerate(devices, start=1):
             message += "{}) {}\n".format(position, device["nickname"])
-            self._device_index_map.update(position=device["deviceId"])
+            self._device_index_map[position] = device["deviceId"]
+
         message += "Please select a device: "
 
         self.logger.debug("Prompting user to select a device; device_ids=%s",
