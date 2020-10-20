@@ -2,7 +2,7 @@
 PingID MFA plugin for Safeguard for Privileged Sessions
 
 # Support
-- This plugin is officially supported for One Identity Safeguard for Privileged Sessions (SPS) customers with a valid maintenance contract. Feature requests and bug reports should be submitted via the regular support channel on the [One Identity Support page](https://support.oneidentity.com). Such requests are tracked and will be answered within the time frames set out in the support agreement.
+- This plugin is in experimental status. This plugin may change without notice.
 
 - We welcome feature requests, pull requests, and bug reports submitted via GitHub.com, but in this case there is no guaranteed response time.
 
